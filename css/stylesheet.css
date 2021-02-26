@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway' , sans-serif; 
+}
+
+#my-section , #about-me , #education , #contact{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    background-image: url(../1.png);
+    background-size: cover;
+    background-blend-mode: normal;
+}
+.social-media{
+  width: 90%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style-type: none;
+  overflow: auto;
+}
+li {
+    display: inline;
+    float: right;
+}
+li a {
+  display: block;
+  color: navy;
+  text-decoration: none;
+  text-align: center;
+}
+.icon-d{
+    margin: 1.3vw;
+    font-size: 1.3vw;
+    color :#0b1f65;
+    cursor: pointer;
+}
+.icon-d:hover{
+    color: #e2b327;
+}
+.intro{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #123175;
+    margin: 2rem 1rem;
+    margin-bottom: 0;
+    margin-top: 3vh;
+}
+.intro h1{
+    font-size: 37px;
+    color: black;
+    text-align: center;
+}
+.name{
+    color: #123175;
+}
+.web{
+    color: #e2b327;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    width: 15vw;
+    height: 5vh;
+    margin-left: 2rem;
+    outline: none;
+    border: 2px solid #e9ddd4;
+    letter-spacing: 2px;
+    font-size: .8rem;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #e2b327;
+    border-color: #e2b327;
+    color: white;
+    transition: .3s;
+
+}
+.hire-me{
+    background: none;
+    border: none;
+    animation: morph-a 10s infinite;
+}
+
+@keyframes morph-a {
+  0%   { background-color: #B8C7F4; }
+  16%  { background-color: #90A8EE; }
+  33%  { background-color: #6988E7; }
+  50%  { background-color: #4169E1; }
+  66%  { background-color: #6988E7; }
+  83%  { background-color: #90A8EE; }
+  100% { background-color: #B8C7F4; }
+}
+
+.resume{
+    border-color: #63747a;
+    background: #63747a;
+    color: white;
+}
+.scroll{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 20vh;
+}
+.shape{
+    height: 20px;
+    width: 20px;
+    border: 2px solid #0b1f65;
+    transform: rotate(45deg);
+    margin-bottom: 1rem;
+    border-top: 0;
+    border-left: 0;
+    animation: shine 4s ease infinite;
+}
+@keyframes shine{
+    0%  {opacity: .2;}
+    12% {opacity: .5;}
+    25% {opacity: .7;}
+    50% {opacity:  1;}
+    75% {opacity: .7;}
+    87% {opacity: .5;}
+    100%{opacity: .2;}
+}
+#intersets{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    background-image:url(../2.png); 
+}
+.INTERESTS-title{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.INTERESTS-title h1{
+    font-size: 7vh;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    color: white;
+    
+}
+.INTERESTS{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+}
+.INTERESTS .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90vw;
+}
+.INTERESTS-icon {
+    width: 10vw;
+    height: 10vh;
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e2b327;
+    font-size: 3vw;
+    margin-bottom: 1vh;
+    margin-top: 2vh;
+}
+.col h1{
+    color: #e2b327;
+}
+.col span{
+    font-size: .8vw;
+    text-align: center;
+    padding: 1vw;
+}
+.info{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-info{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.about-info p{
+    font-size: 3vh;
+    text-align: center;
+    color: black;
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+}
+.info-skills{
+    display: flex;
+    padding: 5rem 0;
+    align-items: center;
+}
+.skills{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.skill-bar{
+    width: 80%;
+    height: 1.5rem;
+    background: none;
+    display: flex;
+    margin: 1rem 0;
+}
+.skill-title{
+    width: 20%;
+    background: #e2b327;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: .8rem;
+
+}
+.pr-bar{
+    background: #123175;   
+}
+
+
+.html{
+    animation: progressBar 2s ease-in-out;
+    animation-fill-mode:both;
+}
+@keyframes progressBar {
+        0%  {width: 0%}
+        100%{width: 70%}
+
+}
+.css{
+    animation: progressBar 2s ease-in-out;
+    animation-fill-mode:both;
+
+}
+.js{
+    animation: jsBar 2s ease-in-out;
+    animation-fill-mode:both;
+}
+@keyframes jsBar {
+        0%  {width: 0%}
+        100%{width: 60%}
+
+}
+.java{
+    animation: jnBar 2s ease-in-out;
+    animation-fill-mode:both;
+}
+.nodejs{
+    animation: jnBar 2s ease-in-out;
+    animation-fill-mode:both;
+}
+@keyframes jnBar {
+        0%  {width: 0%}
+        100%{width: 50%}
+}
+.cpp{
+    animation: cppBar 2s ease-in-out;
+    animation-fill-mode:both;
+}
+@keyframes cppBar {
+        0%  {width: 0%}
+        100%{width: 40%}
+}
+.mysql{
+    animation: jnBar 2s ease-in-out;
+    animation-fill-mode:both;
+}
+#education{
+    background-image:url(../3.png);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+}
+#contact{
+    background-image:url(../4.png); 
+}
+
+.education-title h1 , .contact-title h1{
+    position: relative;
+    font-size: 7vh;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    color: #0b1f65;
+    margin-bottom: 5vh;
+    
+}
+
+.e-col{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        padding: 5rem 0;
+
+    }
+.edc-col{
+        width: 25vw;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #e1d9d1;
+    }
+
+.edc-col h2{
+    text-align: center;
+    margin-bottom: 2vh;
+    color: #4693b8;
+}
+.edc-col h3{
+    font-size: 1.7vh;
+    text-align: center;
+}
+.edc-col p{
+    font-size: 2vh;
+    font-weight: bold;
+    text-align: center;
+    padding: 2vh;
+    color: gray;
+}
+#contact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact-title h1{
+    color: white;
+}
+
+.contact-form{
+    width: 30rem;
+    height: 21rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 4rem 0;
+}
+.contact-form h4{
+    color: #e2b327;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.inp{
+    width: 20rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4693b8;
+    margin-bottom: .3rem;
+}
+.form-inp{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.inp input{
+    width: 90%;
+    height: 100%;
+    color: white;
+    border: none;
+    outline: none;
+    background: none;
+}
+.messg{
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4693b8;
+}
+.messg textarea{
+
+    width: 90%;
+    height: 95%;
+    color: white;
+    border: none;
+    outline: none;
+    background: none;
+}
+.contact-btn{
+    width: 20rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 1rem;
+}
+.contact-btn button{
+    width: 7rem;
+    height: 2rem;
+    border: 2px solid white;
+    background: none;
+    outline: none;
+    border-radius: 50px;
+    color: white;
+    letter-spacing: 1px;
+    font-size: .8rem;
+    transition: .3s;
+}
+.contact-btn button:hover{
+    background: #e2b327;
+    border-color: #e2b327;
+    transition: .3s;
+}
+
+.CONTACT{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0;
+
+}
+.contact-col{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+}
+.or{
+    height: 90%;
+    width: .3vw;
+    background-color: white;
+
+}
+
+.other{
+    width: 50%;
+    background:none;
+    height: 30vh;
+    color: #e1d9d1;
+}
+.other div{
+    font-size: 1.7rem;
+    text-align: left;
+    color: #e1d9d1;
+}
+
+@media only screen and (max-width:974px){
+    #about-me{
+        height: auto;
+    }
+    .icon-d{
+        font-size: 1rem;
+        margin-left: 1rem;
+    }
+    .intro h1{
+        font-size: 1.5rem;
+    }
+    .intro p{
+        font-size: .8rem;
+    }
+    .btns{
+        flex-direction: column;
+    }
+    .btns button{
+        margin-bottom: 1rem;
+        margin-left: 0;
+    }
+    .hire-me , .resume{
+        margin-top: 1rem;
+        font-size: 1.5vh;
+    }
+    .INTERESTS , .info-skills , .CONTACT{
+        flex-direction: column;
+    }
+    .info-skills{
+        flex-direction: column;
+    }
+    .skills{
+        width: 100%;
+    }
+    .info{
+        width: 100%;
+    }
+    .skills-bar{
+        width: 95%;
+    }
+    .INTERESTS-icon{
+     font-size: 2rem;
+    }
+    .col h1{
+        font-size: 1rem;
+    }
+    #contact{
+        height: auto;
+    }
+    .contact-title h1{
+        color:#e2b327;
+        margin-top: 2vh;
+    }
+    .contact-col{
+        align-items: center;
+        width: 100%;
+        margin-top: 7vh;
+    }
+    .other{
+        width: 100%;
+    }
+    .or{
+        display: none;
+    }
+    .other .iconify {
+        margin-top: 2vh;
+    }
+
+}
