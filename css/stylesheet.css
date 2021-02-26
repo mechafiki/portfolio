@@ -580,3 +580,6 @@ footer{
     color: white;
     transition: .4s;
 }
+.icon-f a:hover{
+    color:white;
+}
